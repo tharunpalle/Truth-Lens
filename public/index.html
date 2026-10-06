@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truth Lens &mdash; Architecture Foundation</title>
+  <meta name="description" content="Truth Lens - Clean, modular, and scalable foundational architecture for web and verification applications.">
+  <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar Component -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-logo">
+        <img src="/images/logo.svg" alt="Truth Lens Logo" class="brand-icon" />
+        <span class="brand-title">Truth <span class="accent-text">Lens</span></span>
+        <span class="badge-tag">v0.1.0</span>
+      </div>
+      <nav class="main-nav">
+        <a href="/" class="nav-link active">Foundation</a>
+        <a href="/status" target="_blank" class="nav-link">System Status</a>
+        <a href="/api/health" target="_blank" class="nav-link">API Health</a>
+      </nav>
+      <div class="nav-actions">
+        <span class="status-indicator">
+          <span class="status-dot"></span>
+          <span class="status-label">Foundation Ready</span>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Wrapper -->
+  <main class="main-wrapper">
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-pill">
+        <span>🚀 Core Foundation Initialized</span>
+      </div>
+      <h1 class="hero-title">
+        Scalable Architecture <br/>
+        <span class="accent-text">Engineered for Precision</span>
+      </h1>
+      <p class="hero-description">
+        Truth Lens provides a clean, modular, and production-ready baseline. The core structure is decoupled, testable, and prepared for future feature development.
+      </p>
+      <div class="hero-actions">
+        <button id="btn-ping" class="btn btn-primary">
+          <span>⚡ Test Live API Ping</span>
+        </button>
+        <a href="#architecture" class="btn btn-secondary">
+          <span>Explore Modular Structure</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Architecture Grid -->
+    <section id="architecture" class="architecture-section">
+      <div class="section-header">
+        <h2 class="section-title">Foundational Layer Decomposition</h2>
+        <p class="section-subtitle">Every directory serves a single, well-defined architectural responsibility.</p>
+      </div>
+
+      <div class="grid-cards">
+        <!-- src/components/ -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-icon">🧩</div>
+            <span class="card-badge">src/components</span>
+          </div>
+          <h3 class="card-title">Components</h3>
+          <p class="card-desc">
+            Reusable UI blocks, partial views, and presentational elements isolated from data logic.
+          </p>
+        </article>
+
+        <!-- src/pages/ -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-icon">📄</div>
+            <span class="card-badge">src/pages</span>
+          </div>
+          <h3 class="card-title">Pages & Routes</h3>
+          <p class="card-desc">
+            Application screens, routing controllers, and blueprint endpoints mapping user flows.
+          </p>
+        </article>
+
+        <!-- src/services/ -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-icon">⚡</div>
+            <span class="card-badge">src/services</span>
+          </div>
+          <h3 class="card-title">Services</h3>
+          <p class="card-desc">
+            External API integrations, data access pipelines, and business logic coordinators.
+          </p>
+        </article>
+
+        <!-- src/utils/ -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-icon">🛠️</div>
+            <span class="card-badge">src/utils</span>
+          </div>
+          <h3 class="card-title">Utilities</h3>
+          <p class="card-desc">
+            Centralized logging, data sanitization, response shaping, and helper functions.
+          </p>
+        </article>
+
+        <!-- src/models/ -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-icon">📦</div>
+            <span class="card-badge">src/models</span>
+          </div>
+          <h3 class="card-title">Models & Schemas</h3>
+          <p class="card-desc">
+            Data structures, domain entities, validators, and serialization mechanisms.
+          </p>
+        </article>
+
+        <!-- src/config/ -->
+        <article class="card">
+          <div class="card-header">
+            <div class="card-icon">⚙️</div>
+            <span class="card-badge">src/config</span>
+          </div>
+          <h3 class="card-title">Configuration</h3>
+          <p class="card-desc">
+            Environment-aware settings, secret masking, network definitions, and filesystem paths.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Diagnostics Terminal -->
+    <section class="diagnostics-panel">
+      <div class="diagnostics-header">
+        <div class="terminal-title">
+          <span>● Live Foundation Diagnostics</span>
+        </div>
+        <span class="card-badge">GET /api/health</span>
+      </div>
+      <pre id="console-output" class="console-output">Initializing diagnostics probe...</pre>
+    </section>
+
+  </main>
+
+  <!-- Footer Component -->
+  <footer class="app-footer">
+    <div class="footer-container">
+      <div class="footer-meta">
+        <p class="footer-brand">Truth Lens &copy; 2026. Distributed under MIT License.</p>
+        <p class="footer-subtext">Scalable Foundation Architecture &bull; Ready for Feature Development</p>
+      </div>
+      <div class="footer-links">
+        <a href="/status" class="footer-link">Module Status</a>
+        <a href="/api/health" class="footer-link">API Health</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/main.js"></script>
+</body>
+</html>

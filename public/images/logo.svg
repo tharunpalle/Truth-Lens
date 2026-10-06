@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="lensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <!-- Outer Glow Ring -->
+  <circle cx="50" cy="50" r="44" fill="none" stroke="url(#glowGrad)" stroke-width="6" />
+  <!-- Hexagonal / Shield Aperture Frame -->
+  <polygon points="50,10 85,28 85,72 50,90 15,72 15,28" fill="#0f172a" stroke="url(#lensGrad)" stroke-width="3" stroke-linejoin="round" />
+  <!-- Inner Lens Rings -->
+  <circle cx="50" cy="50" r="24" fill="none" stroke="url(#lensGrad)" stroke-width="2.5" stroke-dasharray="3 3" />
+  <circle cx="50" cy="50" r="14" fill="#1e1b4b" stroke="#38bdf8" stroke-width="2" />
+  <!-- Center Pupil / Focal Beam -->
+  <circle cx="50" cy="50" r="6" fill="#38bdf8" />
+  <path d="M50 30 L50 20 M50 70 L50 80 M30 50 L20 50 M70 50 L80 50" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" />
+</svg>
